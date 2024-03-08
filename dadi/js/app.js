@@ -12,17 +12,18 @@ dadiElement.addEventListener("click", function () {
     const numberTwo = []
 
 const randomNumberOne = Math.floor(Math.random() * 6) +1;
-numberOne.push(randomNumberOne)
 
 const randomNumberTwo = Math.floor(Math.random() * 6) +1;
-numberTwo.push(randomNumberTwo)
+
 
 console.log("Primo numero",+ randomNumberOne, "Secondo numero", + randomNumberTwo);
 
 if (randomNumberOne > randomNumberTwo){
     console.log("Hai vinto");
-} else{
+} if (randomNumberOne < randomNumberTwo){
     console.log("Hai perso");
+} if (randomNumberOne === randomNumberTwo) {
+    console.log("pareggio");
 }
 
 

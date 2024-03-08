@@ -13,26 +13,23 @@ console.log(nameElement)
 buttonElement.addEventListener("click", function() {
 ;
 
-//const nameElementSection = parseInt(nameElement.value);
+const nameElementSection = parseInt(nameElement.value);
 
 const arreyName = ["valerio", "marco", "edoardo"];
-console.log(arreyName);
 
 
 let nameSection = true;
 
+
 for (let i = 0; i < arreyName.length; i++) {
 const arreyNameTrue = arreyName[i]
-
-if (nameElement === arreyNameTrue){
-let nameSection = false ;
-}
+let nameSection = false;
 
 }
 
-if (nameSection === true) {
+if (nameSection === arreyName) {
     console.log("Nome nella lista")
-} else {
+} if (nameSection != arreyName) {
     console.log("Nome non nella lista");
 }
 
